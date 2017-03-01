@@ -1,11 +1,11 @@
-# # # 3 types of hashes
-# # bike = {"color" => "blue", "size" => "big", "price" => 500}
-# # scooter = {:color => "white", :size => "small", :price => 80}
-# # helmet = {color: "red", size: "small", price: 80}
+#3 types of hashes
+bike = {"color" => "blue", "size" => "big", "price" => 500}
+scooter = {:color => "white", :size => "small", :price => 80}
+helmet = {color: "red", size: "small", price: 80}
 
-# # p " #{bike['color']} "
-# # p " #{scooter[:color]} "
-# # p " #{helmet[:color]} "
+p " #{bike['color']} "
+p " #{scooter[:color]} "
+p " #{helmet[:color]} "
 
 # class
 class Store 
@@ -20,13 +20,13 @@ class Store
   end
 
   def sentence
-    "the #{@size} #{@color} #{@item} costs $#{@price} "
+    "the #{size} #{color} #{item} costs $#{price} "
   end
 end
 
-item1 = Store.new({item: "bike", color: "red", size: "small", price: 500})
-item2 = Store.new({item: "scooter", color: "white", size: "big", price: 80})
-item3 = Store.new({item: "helmet", color: "black", size: "small", price: 30})
+item1 = Store.new(item: "bike", color: "red", size: "small", price: 500)
+item2 = Store.new(item: "scooter", color: "white", size: "big", price: 80)
+item3 = Store.new(item: "helmet", color: "black", size: "small", price: 30)
 
 p item1.sentence
 p item2.sentence
